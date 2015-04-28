@@ -1,5 +1,5 @@
 if (Meteor.isClient) {
-    var app = angular.module('meteor-angular-base', ['Home']);
+    var app = angular.module('meteor-angular-base', ['Home', 'ui.bootstrap']);
 
     app.config(['$interpolateProvider', function($interpolateProvider) {
         $interpolateProvider.startSymbol('[[');
