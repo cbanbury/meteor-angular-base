@@ -1,10 +1,10 @@
 if (Meteor.isClient) {
-    var app = angular.module('meteor-angular-base', ['Home'],
+    var app = angular.module('meteor-angular-base', ['Home']);
 
-    function($interpolateProvider){
+    app.config(['$interpolateProvider', function($interpolateProvider) {
         $interpolateProvider.startSymbol('[[');
         $interpolateProvider.endSymbol(']]');
-    });
+    }]);
 }
 
 if (Meteor.isServer) {
